@@ -1,17 +1,42 @@
 div {
   width: 25px;
   height: 15px;
-  background-color: red;
+  background-color: pink;
   position: relative;
-  animation-name: example;
-  animation-duration: 4s;
+  animation-name: yipee;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-@keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:pink; left:200px; top:0px;}
-  50%  {background-color:magenta; left:0px; top:0px;}
-  75%  {background-color:violet; left:200px; top:0px;}
-  100% {background-color:red; left:0px; top:0px;}
+@keyframes yipee {
+  0%   {background-color:pink; left:-15px; top:0px;}
+  50%  {background-color:magenta; left:1890px; top:0px;}
+  100% {background-color:pink; left:-15px; top:0px;}
+}
+
+h1 {
+	width: 300px;
+	height: 60px;
+	background-color: CornflowerBlue;
+	position: relative;
+	animation-name: title;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: relative;
+}
+
+@keyframes title {
+	0%     {rotate: 5deg; left:820px; top:0px; background-color: CornflowerBlue; animation-timing-function: ease;}
+	46.8%  {rotate: -5deg; left:820px; top:0px; background-color: CornflowerBlue; animation-timing-function: ease-out;}
+	47%    {rotate: 255deg; left:802; top:0px; background-color: Gray; animation-timing-function: linear;}
+	47.2%  {rotate: -5deg; left:820px; top:0px; background-color: CornflowerBlue; animation-timing-function: linear;}
+	50%  {rotate: -5deg; left:820px; top:0px; background-color: CornflowerBlue; animation-timing-function: linear;}
+	70%    {rotate: -1deg; left:820px; top:0px; background-color: CornflowerBlue; animation-timing-function: linear;}
+	70.2%  {rotate: -178deg; left:802; top:0px; background-color: Gray; animation-timing-function: linear;}
+	70.4%  {rotate: -1deg; left:820px; top:0px; background-color: CornflowerBlue; animation-timing-function: ease-out;}
+	75.4%  {rotate: -1deg; left:820px; top:0px; background-color: CornflowerBlue; animation-timing-function: ease-in;}
+	75.6%  {rotate: 723deg; left:802; top:0px; background-color: Gray; animation-timing-function: linear;}
+	75.8%  {rotate: 0deg; left:820px; top:0px; background-color: CornflowerBlue; animation-timing-function: ease;}
+	100%   {rotate: 5deg; left:820px; top:0px; background-color: CornflowerBlue; animation-timing-function: ease;}
 }
